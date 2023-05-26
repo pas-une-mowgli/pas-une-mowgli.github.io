@@ -1,0 +1,32 @@
+// картинки
+    
+.composition
+    position: relative
+    &__photo
+        position: absolute
+        width: 55%
+        box-shadow: $box-shadow
+        border-radius: .5rem
+        z-index: 10
+        outline-offset: 1rem
+        transition: all .2s
+        &_n1
+            left: 0rem
+            top: 0rem
+        &_n2
+            top: 7rem
+            right: 0rem
+           
+        &_n3
+            left: 11rem
+            top: 13rem
+        &:hover
+            transform: scale(1.1)
+            z-index: 20
+            outline: 1rem solid $brown-color-dark
+    &:hover &__photo:not(:hover)
+        transform: scale(.95)
+        
+           
+            
+            

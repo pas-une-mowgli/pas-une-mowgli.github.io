@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Підключення шрифтів -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Підключення іконок -->
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Balloons</title>
+</head>
+
+<body>
+    <!-- Основний контейнер -->
+    <div class="container">
+
+        <!-- Навігаційне меню гамбургер -->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__toggle" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__background"></div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#about" class="navigation__link">Про нас</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Знижки</a></li>
+                    <li class="navigation__item"><a href="#catalog" class="navigation__link">Кращі тури</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Калькулятор ціни</a></li>
+                    <li class="navigation__item"><a href="#form" class="navigation__link">Зв'язатися з нами</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Хедер. Перша сторінка -->
+        <header class="header">
+            <img src="icons/icon-logo.svg" alt="logo" class="header__logo">
+            <div class="header__box">
+                <h1 class="title-first">
+                    <span class="title-first__main">Тури на повітряній кулі</span>
+
+                    <span class="title-first__secondary">незабутня пригода чекає вас</span>
+                </h1>
+                <!-- Кнопка -->
+                <a href="#catalog" class="btn btn_animated">Наш каталог</a>
+            </div>
+        </header>
+
+        <main>
+            <!-- Перша секція -->
+            <section class="section-about" id="about">
+                <h2 class="title-secondary margin-bottom-80px">Неймовірне відчуття свободи</h2>
+
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="title-third margin-bottom-10px">Дозвольте собі пригоди</h3>
+                        <p class="paragraph-about margin-bottom-30px">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptate
+                            tempora reprehenderit amet earum pariatur facere ut, reiciendis impedit voluptates, facilis
+                            ex numquam sequi porro aperiam debitis consectetur sapiente. Itaque, unde!</p>
+
+                        <h3 class="title-third margin-bottom-10px">6000 метрів над рівнем моря</h3>
+                        <p class="paragraph-about margin-bottom-50px">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptate
+                            tempora reprehenderit amet
+                            earum pariatur facere ut, reiciendis impedit voluptates, facilis ex numquam sequi porro
+                            aperiam debitis consectetur
+                            sapiente. Itaque, unde!</p>
+
+                        <!-- Кнопка -->
+                        <a href="#more" class="btn-text">Дізнатися більше &rarr;</a>
+                    </div>
+                    <!-- Картинки -->
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <img src="img/baloon-one.png" srcset="img/baloon-one.png 954w,
+                                    img/baloon-one-small.png 318w" 
+                                    sizes="(max-width: 1240px) 23vw,
+                                (max-width: 900px) 43vw, (max-width: 600px) 47vw, 300px" alt="photo-baloons-one"
+                                class="composition__photo composition__photo_n1">
+                            <img src="img/baloon-second.png" srcset="img/baloon-second.png 954w,
+                                    img/baloon-second-small.png 318w" 
+                                    sizes="(max-width: 1240px) 23vw,
+                                (max-width: 900px) 43vw, (max-width: 600px) 47vw, 300px" alt="photo-baloons-two"
+                                class="composition__photo composition__photo_n2">
+                            <img src="img/baloon-third.png" srcset="img/baloon-third.png 954w,
+                                    img/baloon-third-small.png 318w" 
+                                    sizes="(max-width: 1240px) 23vw,
+                                (max-width: 900px) 43vw, (max-width: 600px) 47vw, 300px" alt="photo-baloons-three"
+                                class="composition__photo composition__photo_n3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Друга секція -->
+            <section class="section-advanture" id="more">
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <!-- Карточки -->
+                        <div class="advanture-card">
+                            <i class=" advanture-card__icon icon-earth margin-bottom-30px"></i>
+                            <h3 class="title-third margin-bottom-10px">Пригоди</h3>
+                            <p class="paragraph-about">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. A voluptas quidem inventore sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="advanture-card">
+                            <i class=" advanture-card__icon icon-place margin-bottom-30px"></i>
+                            <h3 class="title-third margin-bottom-10px">Пригоди</h3>
+                            <p class="paragraph-about">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. A voluptas quidem inventore sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="advanture-card">
+                            <i class=" advanture-card__icon icon-compas margin-bottom-30px"></i>
+                            <h3 class="title-third margin-bottom-10px">Пригоди</h3>
+                            <p class="paragraph-about">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. A voluptas quidem inventore sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="advanture-card">
+                            <i class=" advanture-card__icon icon-way margin-bottom-30px"></i>
+                            <h3 class="title-third margin-bottom-10px">Пригоди</h3>
+                            <p class="paragraph-about">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. A voluptas quidem inventore sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- секція третя про тури -->
+
+            <section class="section-tour" id="catalog">
+                <h2 class="title-secondary margin-bottom-80px">Найбільш популярні тури</h2>
+
+                <!-- карточки з турами -->
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card-tour">
+                            <!-- передній бік карточки -->
+                            <div class="card-tour__side card-tour__side_front">
+                                <div class="card-tour__img margin-bottom-50px"></div>
+                                <h4 class="card-tour__title">
+                                    <span class="card-tour__span card-tour__span_1">Групові</span>
+                                    <br>
+                                    <span class="card-tour__span card-tour__span_2">тури</span>
+                                </h4>
+                                <div class="card-tour__descr">
+                                    <ul>
+                                        <li>Групи від 6 людей</li>
+                                        <li>Тривалість 2 год</li>
+                                        <li>В групі 1 гід</li>
+                                        <li>Висота польоту 6 км</li>
+                                        <li>Безплатні сувеніри</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- задній бік карточки -->
+                            <div class="card-tour__side card-tour__side_back">
+                                <div class="card-tour__backside-box">
+                                    <div class="card-tour__text card-tour__text_1 margin-bottom-80px">повна вартість
+                                    </div>
+                                    <div class="card-tour__text card-tour__text_2 margin-bottom-80px">5990₴</div>
+                                    <a href="#form" class="btn btn_animated">Забронювати</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-1-of-3">
+                        <div class="card-tour">
+                            <!-- передній бік карточки -->
+                            <div class="card-tour__side card-tour__side_front">
+                                <div class="card-tour__img card-tour__img_2 margin-bottom-50px"></div>
+                                <h4 class="card-tour__title">
+                                    <span class="card-tour__span card-tour__span_1">Приватні</span>
+                                    <br>
+                                    <span class="card-tour__span card-tour__span_2">тури</span>
+                                </h4>
+                                <div class="card-tour__descr">
+                                    <ul>
+                                        <li>Групи від 6 людей</li>
+                                        <li>Тривалість 2 год</li>
+                                        <li>В групі 1 гід</li>
+                                        <li>Висота польоту 6 км</li>
+                                        <li>Безплатні сувеніри</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- задній бік карточки -->
+                            <div class="card-tour__side card-tour__side_back">
+                                <div class="card-tour__backside-box">
+                                    <div class="card-tour__text card-tour__text_1 margin-bottom-80px">повна вартість
+                                    </div>
+                                    <div class="card-tour__text card-tour__text_2 margin-bottom-80px">5990₴</div>
+                                    <a href="#form" class="btn btn_animated">Забронювати</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-1-of-3">
+                        <div class="card-tour">
+                            <!-- передній бік карточки -->
+                            <div class="card-tour__side card-tour__side_front">
+                                <div class="card-tour__img card-tour__img_3 margin-bottom-50px"></div>
+                                <h4 class="card-tour__title">
+                                    <span class="card-tour__span card-tour__span_1">Оглядові</span>
+                                    <br>
+                                    <span class="card-tour__span card-tour__span_2">майданчики</span>
+                                </h4>
+                                <div class="card-tour__descr">
+                                    <ul>
+                                        <li>Групи від 6 людей</li>
+                                        <li>Тривалість 2 год</li>
+                                        <li>В групі 1 гід</li>
+                                        <li>Висота польоту 6 км</li>
+                                        <li>Безплатні сувеніри</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- задній бік карточки -->
+                            <div class="card-tour__side card-tour__side_back">
+                                <div class="card-tour__backside-box">
+                                    <div class="card-tour__text card-tour__text_1 margin-bottom-80px">повна вартість
+                                    </div>
+                                    <div class="card-tour__text card-tour__text_2 margin-bottom-80px">5990₴</div>
+                                    <a href="#form" class="btn btn_animated">Забронювати</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="text-align-center">
+                    <a href="#" class="btn btn_animated margin-bottom-80px">Забронювати</a>
+                </div>
+
+            </section>
+
+            <!-- Секція третя відгуки -->
+            <section class="section-feedback">
+                <div class="bg-gradient"></div>
+                <video class="bg-video" autoplay muted loop>
+                    <source src="img/air-balloons.mp4">
+                    <source src="img/air-balloons.webm">
+                </video>
+                <h2 class="title-secondary title-secondary_white margin-bottom-80px">Відгуки наших клієнтів</h2>
+
+                <!-- Карточка з відгуками -->
+                <div class="row">
+                    <div class="feedback-card">
+                        <figure class="feedback-card__img">
+                            <img src="img/feed-1.jpg" alt="photo">
+                            <figcaption class="feedback-card__name">Антон Рябин</figcaption>
+                        </figure>
+                        <div class="feedback-card__box">
+                            <h3 class="title-third margin-bottom-10px">Я отримав безліч емоцій</h3>
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                                perferendis id nostrum nihil aliquam esse sed, earum non hic aspernatur vero, quam ullam
+                                corporis alias, optio a temporibus dolor? Modi perferendis id nostrum nihil aliquam esse
+                                sed.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="feedback-card">
+                        <figure class="feedback-card__img">
+                            <img src="img/feed-2.jpg" alt="photo">
+                            <figcaption class="feedback-card__name">Ліза Фролова</figcaption>
+                        </figure>
+                        <div class="feedback-card__box">
+                            <h3 class="title-third margin-bottom-10px">Це було неймовірно та незабутньо</h3>
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                                perferendis id nostrum
+                                nihil aliquam esse sed, earum non hic aspernatur vero, quam ullam corporis alias, optio
+                                a temporibus
+                                dolor? Modi perferendis id nostrum nihil aliquam esse sed.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text-align-center">
+                    <a href="#" class="btn btn_animated">Забронювати</a>
+                </div>
+            </section>
+
+            <!-- Секція з формою -->
+            <section class="section-book" id="form">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+
+                            <form action="#" class="form">
+                                <h2 class="title-secondary margin-bottom-30px">Забронювати тур</h2>
+
+                                <!-- Інпути -->
+                                <div class="form__group">
+                                    <input type="text" class="form__input" required id="name"
+                                        placeholder="Ім'я Прізвище">
+                                    <label for="name" class="form__label">Ваше ім'я та прізвище</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="email" class="form__input" required id="email"
+                                        placeholder="Ваша пошта">
+                                    <label for="email" class="form__label">Ваша пошта</label>
+                                </div>
+
+                                <!-- Радіо-інпути для вибору -->
+
+                                <div class="form__group">
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-1" name="checked">
+                                        <label for="tour-1" class="form__label-radio">
+                                            <span class="form__button-radio"></span>
+                                            Груповий тур</label>
+                                    </div>
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-2" name="checked">
+                                        <label for="tour-2" class="form__label-radio">
+                                            <span class="form__button-radio"></span> Індивідуальний тур
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <!-- Кнопка відправки -->
+
+                                <div class="form__group">
+                                    <button class="btn btn_brown">Забронювати</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="row">
+                <a href="#"><img src="icons/icon-logo.svg" alt="logo" class="footer__logo"></a>
+            </div>
+            <div class="row">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#about" class="footer__link">Про нас</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Знижки</a></li>
+                    <li class="footer__item"><a href="#catalog" class="footer__link">Кращі тури</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Калькулятор ціни</a></li>
+                    <li class="footer__item"><a href="#form" class="footer__link">Зв'язатися з нами</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Власна Grid-сітка -->
+
+    <!-- <section class="gris-test">
+        <div class="row">
+            <div class="col-1-of-2">col-1-of-2</div>
+            <div class="col-1-of-2">col-1-of-2</div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">col-1-of-3</div>
+            <div class="col-1-of-3">col-1-of-3</div>
+            <div class="col-1-of-3">col-1-of-3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">col-1-of-3</div>
+            <div class="col-2-of-3">col-2-of-3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">col-1-of-4</div>
+            <div class="col-1-of-4">col-1-of-4</div>
+            <div class="col-1-of-4">col-1-of-4</div>
+            <div class="col-1-of-4">col-1-of-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">col-1-of-4</div>
+            <div class="col-1-of-4">col-1-of-4</div>
+            <div class="col-2-of-4">col-2-of-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">col-1-of-4</div>
+            <div class="col-3-of-4">col-3-of-4</div>
+        </div>
+
+    </section> -->
+
+
+
+</body>
+
+</html>

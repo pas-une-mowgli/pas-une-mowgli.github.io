@@ -1,0 +1,52 @@
+.btn
+    &, &:link, &:visited
+        @include style-link($gray-color)
+        background: white
+        border-radius: 5rem
+        font-weight: 600
+        font-size: 2rem        
+        padding: 1.5rem 4rem        
+        position: relative        
+        transition: all .3s
+        border: none
+        @include respond(tab-land)
+            padding: 1.2rem 3rem  
+            font-size: 1.8rem
+        @include respond(tab-port)
+            padding: 2rem 5rem
+
+    &:hover
+        transform: translateY(-.4rem)
+        box-shadow: $box-shadow
+        &:after
+            content: ""
+            transform: scaleX(1.5) scaleY(1.7)
+            opacity: 0
+            
+            
+    &:active
+        transform: translateY(-.2rem)
+    &::after
+        content: ''
+        width: 100%
+        height: 100%
+        background: $white-color
+        border-radius: 5rem
+        display: inline-block
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        transition: all .4s
+    &_animated
+        animation: BtnToUp .5s ease-out .7s
+        animation-fill-mode: backwards
+.btn_brown
+    &, &:link, &:visited
+        background: $brown-color-light
+        color: $white-color
+    &:hover       
+        &:after
+            background: $brown-color-dark
+        
+

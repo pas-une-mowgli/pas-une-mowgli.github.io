@@ -1,0 +1,35 @@
+// Стилістика для секцій
+    
+.section-about
+    padding-top: 8rem
+    padding-bottom: 10rem
+    @include respond(tab-land)
+        padding-bottom: 8rem
+    @include respond(tab-port)
+        margin-bottom: 40rem
+
+.section-advanture
+    padding: 21rem 0
+    background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($black-color, 0.7) 99.94%), url(../img/bg-2.png) center/cover no-repeat
+    transform: skewY(7deg)
+    & > *
+        transform: skewY(-7deg)
+    @include respond(tab-land)
+        padding: 12rem 0
+
+.section-tour
+    padding-top: 21rem
+
+
+.section-feedback
+    padding: 8rem 0rem
+    position: relative
+
+.section-book
+    padding: 10rem
+    background: linear-gradient(90.05deg, $brown-color-light, $brown-color-dark)
+    @include respond(tab-port)
+        padding: 4rem
+
+
+    

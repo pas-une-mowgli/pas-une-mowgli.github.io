@@ -1,0 +1,24 @@
+.header
+    position: relative
+    height: 95vh
+    background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($black-color, 0.7) 99.94%), url(../img/pexels.jpg) center/cover no-repeat
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+    @media (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1540px)
+        background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($black-color, 0.7) 99.94%), url(../img/pexels-big.jpg) 
+
+    &__logo
+        position: absolute
+        top: 5rem
+        left: 5rem
+        width: 5.6rem
+        height: 7rem
+    &__box
+        width: 100%
+        position: absolute
+        top: 40%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+        font-size: 62.5%
+        @include respond(tab-land)
+        top: 50%

@@ -1,0 +1,136 @@
+.card-tour
+    height: 50rem    
+    perspective: 150rem
+    -moz-perspective: 150rem  
+    position: relative  
+    @media only screen and (max-width:900px), (hover:none)
+        height: auto
+    
+    
+    &__side
+        height: 50rem
+        transition: all .7s ease-out
+        color: white
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        backface-visibility: hidden
+        box-shadow: $box-shadow
+        border-radius: .5rem
+        overflow: hidden
+        @media only screen and (max-width:900px), (hover:none)
+            height: auto
+            position: relative
+            box-shadow: none
+        
+        
+        
+            
+        &_back
+            background: linear-gradient(120deg, rgba($brown-color-light, 0.7) 0.03%, rgba($brown-color-dark, 0.7) 99.94%)
+            transform: rotateY(180deg)
+            @media only screen and (max-width:900px), (hover:none)
+                transform: rotateY(0deg)
+                clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%)
+                padding-top: 12rem
+                margin-top: -10rem
+
+    &:hover &__side_front
+        transform: rotateY(-180deg)
+        @media only screen and (max-width:900px), (hover:none)
+            transform: rotateY(0deg)
+    &:hover &__side_back
+        transform: rotateY(0deg)
+    &__img
+        height: 21rem
+        background-blend-mode: hard-light
+        background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($black-color, 0.7) 99.94%), url(../img/card-1.png) center/cover no-repeat
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+        &_2
+            background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($black-color, 0.7) 99.94%), url(../img/card-2.png) center/cover no-repeat
+        &_3
+            background: linear-gradient(90.05deg, rgba($brown-color-light, 0.7) 0.03%, rgba($black-color, 0.7) 99.94%), url(../img/card-3.png) center/cover no-repeat
+        @media only screen and (max-width:900px), (hover:none)
+            height: 30rem
+    &__title
+        font-weight: 300
+        font-size: 2.8rem        
+        text-align: right
+        letter-spacing: .2rem
+        text-transform: uppercase
+        color: $white-color
+        position: absolute
+        top: 17rem
+        right: 0rem
+        @media only screen and (max-width:900px), (hover:none)
+            top: 25rem
+            font-size: 3.8rem
+    &__span
+        background: linear-gradient(90deg, $brown-color-light, $brown-color-dark 100%)
+        padding: 1rem 2rem .3rem 2rem
+        
+        &_2
+            position: absolute
+            top: 3.4rem
+            right: 0
+            padding-bottom: 1rem
+            @media only screen and (max-width:900px), (hover:none)
+                top: 4.4rem
+                padding-bottom: 0rem
+    &__descr
+        ul
+            list-style-type: none
+            text-align: center
+
+            li
+                font-weight: 700
+                font-size: $font-size-paragraph                
+                letter-spacing: .2rem
+                text-decoration-line: underline
+                color: $gray-color
+                &:not(:last-child)
+                    margin-bottom: 2rem
+                @include respond(tab-land)
+                    font-size: 1.5rem
+                @media only screen and (max-width:900px), (hover:none)
+                    font-size: 3rem
+    &__backside-box
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        @media only screen and (max-width:900px), (hover:none)
+            position: relative
+            top: 0%
+            left: 0%
+            transform: translate(0%, 0%)
+            padding: 5rem
+            text-align: center
+        
+        
+        // a
+        //     backface-visibility: hidden
+    &__text
+        letter-spacing: .2rem
+        text-transform: uppercase
+        text-align: center
+        color: $white-color
+        &_1
+            font-weight: 300
+            font-size: $font-size-paragraph            
+        &_2
+            font-weight: 500
+            font-size: 6rem
+            
+         
+            
+.card-tour__side_front
+    @media only screen and (max-width:900px), (hover:none)
+        padding-bottom: 13rem                    
+                    
+
+              
+
+               
+    
