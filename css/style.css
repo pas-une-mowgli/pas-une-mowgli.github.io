@@ -1,0 +1,387 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #03a688;
+  padding: 40px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Main content */
+
+.main-content {
+  padding: 88px;
+}
+
+.main-content-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+
+/* About me */
+
+.my-proffession {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin: 0 0 18px 0;
+}
+
+.my-proffession .green {
+  color: green;
+  font-size: 20px;
+}
+
+.transformed {
+  transition: 0.3s all;
+}
+
+.transformed:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.my-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: #03a688;
+  margin: 0 0 28px 0;
+}
+
+.my-descr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  max-width: 525px;
+  display: none;
+}
+
+.about-me-container {
+  margin-bottom: 64px;
+}
+
+/* Projects */
+
+.projects-container {
+  margin-bottom: 48px;
+}
+
+.project-item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.project-list {
+  padding: 0 0 0 18px;
+  margin: 0;
+}
+
+.project-item-descr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.project-item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #005fff;
+}
+
+/* Work experience */
+.work-experience-container {
+  margin-bottom: 44px;
+}
+
+.work-experience-place {
+  margin-bottom: 16px;
+}
+
+.work-experience-position {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+.work-experience-company {
+  color: #6d9bf5;
+}
+
+.work-period {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin: 12px 0 8px 0;
+}
+
+.work-duties-list {
+  padding: 0 0 0 18px;
+  margin: 0;
+}
+
+.work-duties {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+/* Education */
+.education-place {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6d9bf5;
+  margin: 0 0 12px 0;
+}
+
+.education-faculty {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin: 0 0 12px 0;
+}
+
+.education-years {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin: 0;
+}
+
+.educational-line {
+  color: #000;
+}
+
+/* Sidebar */
+.sidebar {
+  max-width: 370px;
+  background: #c2f2ce;
+}
+
+.my-photo {
+  margin-top: 40px;
+}
+
+.contacts-container,
+.tech-skills-container,
+.soft-skills-container {
+  margin: 48px 0 0 40px;
+}
+
+.sidebar-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #161d2a;
+  margin-bottom: 8px;
+}
+
+/* Contacts */
+
+.contacts-type {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #161d2a;
+  margin-right: 8px;
+}
+
+.contacts-item {
+  margin: 0;
+}
+
+.contacts-number {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #161d2a;
+}
+
+.contacts-email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2979ff;
+}
+
+/* Tech-skills */
+
+.skills-list {
+  margin: 0;
+  padding: 0 0 0 22px;
+}
+
+.skills-list-item {
+  padding-right: 10px;
+  color: #03a688;
+}
+
+.skills-list-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #161d2a;
+}
+
+.hover {
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #03a688 50%
+  );
+  background-size: 220%;
+  transition: all 0.6s;
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.hover:hover {
+  background-position: 100%;
+  transform: translateX(-0.7rem);
+}
+.box {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box:hover .image {
+  opacity: 0.3;
+  transform: scale(1);
+}
+
+.box:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #03a688;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.my-photo_media {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .main-content {
+    padding: 30px 15px 30px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .my-photo {
+    display: none;
+  }
+
+  .my-photo_media {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .sidebar {
+    flex-direction: column;
+  }
+
+  .contacts-container {
+    margin-top: 10px;
+  }
+
+  .soft-skills-container {
+    margin-bottom: 10px;
+  }
+}
