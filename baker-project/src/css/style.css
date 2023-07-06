@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Philosopher Regular';
+    src: url('../fonts/Philosopher.eot');
+    src: url('../fonts/Philosopher.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Philosopher.woff') format('woff'),
+    url('../fonts/Philosopher.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+html{
+    font-family: 'Roboto Regular';
+}
+body{
+    background-color: #ffe2b0;
+}
+header{
+    text-align: center;
+    padding-top: 5px;    
+}
+img{
+    margin-bottom: 20px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+li:last-child{
+    margin-right: 0px;
+}
+a{
+    display: inline-block;
+    transition: 0.2s all;
+}
+a:hover{
+    color: rgba(245, 77, 77, 0.836);    
+    transform: translateY(-3px);
+}
+.section-about{
+    background: url(../img/first-img.jpg) center/cover no-repeat;
+    height: 640px;
+    position: relative;
+    
+}
+.section-about__box{
+    width: 420px;
+    height: 190px;
+    background: linear-gradient(180deg, rgba(244,213,178, 0.8)0%, rgba(234,156,65,0.8)100%);
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    padding-top: 15px;
+    transition: .4s all;
+}
+.section-about__box:hover{
+    box-shadow: inset 0 0 0 15px rgba(245, 77, 77, 0.836);
+    transform: scale(1.1);
+  
+}
+.section-about__box:hover .section-about__border{
+    border: none;
+}
+.section-about__border{
+    width: 390px;
+    height: 160px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    padding: 17px 0 0 28px;
+    text-align: center; 
+}
+.section-about__title{
+    font-size: 36px;
+    margin-bottom: 9px;
+    font-family: 'Philosopher Regular';
+    font-weight: 500;
+}
+.section-about__box:hover .section-about__title {
+    color:rgba(245, 77, 77, 0.836);
+}
+.section-about__text{
+    font-size: 12px;
+    text-align: left;
+}
+.section-description__icon-box{
+    text-align: center;
+    margin-bottom: 20px;
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 5;
+}
+.section-description__icon-box img{
+    margin-right: 76px;
+    width: 290px;
+    height: 290px;
+    position: relative;
+    z-index: 5;
+}
+.section-description__icon-box img:last-child{
+    margin-right: 0px;
+}
+.section-description__icon-box img:hover{
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+.section-description__title{
+    font-size: 96px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Philosopher Regular';
+    transition: .3s all;
+}
+.red{
+    color: red;
+}
+.section-description__title:hover{
+    transform: translateY(-5px) scale(1.1);
+    color: red;
+}
+.section-description__title:hover .red{
+    color: black
+}
+.section-description__text{
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.section-map{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-map__title{
+font-size: 36px;
+text-align: center;
+margin-bottom: 20px;
+font-family: 'Philosopher Regular';
+font-weight: 600;
+}
+.section-map__title:hover{
+    color: red;
+}
+hr{
+    border: none;
+    border-top: 1px solid #999;
+    width: 1024px;
+    margin-bottom: 20px;
+}
+footer{
+    text-align: center;
+    height: 80px;
+}
+
+
+@media (max-width: 1199px){
+    .section-description__icon-box img{
+        width: 250px;
+        height: 225px;
+    }
+        
+
+}
+
+@media (max-width: 991px){
+    .section-about__box {
+            top: 54%;
+            left: 35%;
+            
+        }
+
+    .section-description__icon-box img {
+            width: 180px;
+            height: 180px;
+        }
+    .section-description__title {
+            font-size: 70px;
+        }
+        .section-map iframe{
+            width: 700px;
+        }
+    .section-description__text {
+            width: 650px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    .section-description__icon-box img {
+            margin-bottom: 5px;                       
+        }
+    .section-description {
+        margin-top: 5px;
+        }
+}
+
+@media (max-width: 767px){
+    li {
+        margin-right: 30px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }    
+    .section-about__box {
+        top: 54%;
+        left: 5%;    
+    }
+    .section-description__icon-box img {
+        width: 130px;
+        height: 125px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .section-description__text {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .section-map iframe {
+        width: 400px;
+    }
+
+    .section-description{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    li {
+        margin-right: 12px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .section-description__icon-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .section-description__icon-box img{
+        width: 180px;
+        height: 180px;
+        }
+    .section-description__title {
+        font-size: 50px;
+        } 
+   
+
+    .section-map iframe {
+        width: 250px;
+    }
+
+    .section-description {
+        margin-top: 10px;
+    }
+
+    .section-about {
+        height: 350px;
+    }
+    
+    .section-about__box {
+        width: 250px;   
+        height: auto;   
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        padding: 10px 10px;
+    }
+    
+ 
+    .section-about__border {
+        width: 230px;
+        height: auto;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .section-about__title {
+        font-size: 24px;
+        margin-bottom: 9px;
+        
+    }
+    
+    .section-about__box:hover .section-about__title {
+            color: rgba(245, 77, 77, 0.836);
+        }
+    
+    .section-about__text {
+            font-size: 12px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+}
+
