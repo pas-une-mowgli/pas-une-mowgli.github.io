@@ -1,0 +1,222 @@
+/* Загальні стилі секції*/
+.first-screen {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+  background: url(../images/hero-banner\ 2.png) center/cover no-repeat;
+  margin-bottom: 10rem;
+  overflow: hidden;
+}
+
+.media-navigation {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Стиль контейнера з лого і хедером*/
+.header-container {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+/* Стиль для заголовка*/
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  text-transform: capitalize;
+}
+
+/* Кольорова анімація*/
+.letter {
+  display: inline-block;
+  font-weight: 900;
+  animation: wave 1s infinite;
+}
+
+.letter:nth-child(1) {
+  color: #f2869d;
+  animation-delay: 0s;
+}
+
+.letter:nth-child(2) {
+  color: #49dce3;
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(3) {
+  color: #ffce56;
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(4) {
+  color: #34aa87;
+  animation-delay: 0.6s;
+}
+
+.letter:nth-child(5) {
+  color: #9cacea;
+  animation-delay: 0.8s;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Стиль для лого*/
+.header-container .logo {
+  display: block;
+  width: 18rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Стиль для кнопки*/
+
+.header-container a {
+  display: none;
+}
+
+/* Стиль для форми*/
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+  width: 68%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2em;
+  border-radius: 0.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.search-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--brown-gray-color);
+}
+
+.search-form input,
+.search-form select,
+.search-form input::placeholder {
+  padding: 0.5rem;
+  border: none;
+  color: var(--main-color);
+  font-size: 1.3rem;
+}
+
+/* Стилізація гамбургера*/
+/* Вимкнення чекбоксу для стилізації */
+.media-navigation-toggle {
+  display: none;
+}
+/* Стилізація лейблу для появи кнопки*/
+.media-navigation-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+  z-index: 200;
+  height: 8rem;
+  width: 8rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.media-navigation-button img {
+  width: 180%;
+  position: absolute;
+  top: 13%;
+  right: -29%;
+}
+
+/* Створення фону на весь екран*/
+.media-navigation-background {
+  position: absolute;
+  top: 3rem;
+  right: 6rem;
+  z-index: 100;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  transition: 0.7s all;
+}
+
+/* Навігаційне меню*/
+
+.media-navigation-nav {
+  position: absolute;
+  right: 0;
+  top: 0%;
+  z-index: 150;
+  width: 0;
+  height: 100vh;
+  opacity: 0;
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.media-navigation-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background-color: #3fd0d5;
+  list-style-type: none;
+}
+
+.media-navigation-list:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.media-navigation-link {
+  font-size: 3rem;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.media-navigation-link:hover {
+  /* background-position: 100%; */
+  color: var(--main-color);
+  transform: translateX(-1rem);
+}
+
+/* Поява фону і навігаційного меню при натисненні на чекбокс*/
+.media-navigation-toggle:checked ~ .media-navigation-background {
+  transform: scale(100);
+}
+
+.media-navigation-toggle:checked ~ .media-navigation-nav {
+  width: 100%;
+  opacity: 1;
+}

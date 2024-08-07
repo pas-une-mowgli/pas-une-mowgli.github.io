@@ -1,0 +1,45 @@
+.explanation-section {
+  display: flex;
+  justify-content: space-around;
+  max-width: 106rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  padding: 0rem 5rem 0rem 5rem;
+}
+.explanation-box {
+  align-items: center;
+  max-width: 18rem;
+  min-height: 18rem;
+  background-color: #f8f8f8;
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.explanation-box:hover {
+  background-color: var(--white-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.explanation-box-img {
+  display: inline-block;
+  max-width: 6rem;
+  min-height: 6rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.explanation-box-img:hover {
+  transform: rotate(-8deg);
+}
+
+.explanation-box-img:hover + .explanation-box-title {
+  color: var(--main-color);
+}
+
+.explanation-box-title {
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
